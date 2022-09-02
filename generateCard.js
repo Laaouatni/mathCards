@@ -48,12 +48,12 @@ export default function generateCard() {
 
       function subtraction() {
         card.querySelector(".operator").textContent = "-";
-        output.textContent = arrRandom.reduce((a, b) => a - b);
+        output.textContent = addZeroPrefix(arrRandom.reduce((a, b) => a - b));
       }
 
       function multiplication() {
         card.querySelector(".operator").textContent = "*";
-        output.textContent = arrRandom.reduce((a, b) => a * b);
+        output.textContent = addZeroPrefix(arrRandom.reduce((a, b) => a * b));
       }
     }
   });
